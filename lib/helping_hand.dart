@@ -9,11 +9,13 @@ class HelpingHand {
   ///Get instance to show an alert dialog.
   static HelpingHand get instance => _instance;
 
-  showConfirmationDialog({
-    required String message,
-    required BuildContext context,
-    TextStyle? style,
-  }) async {
+  ///Show confirmation dialog.
+  showConfirmationDialog(
+      {required String message,
+      required BuildContext context,
+      TextStyle? style,
+      required Widget onConfirm,
+      onCancel}) async {
     ScaffoldMessenger.of(context).showMaterialBanner(
       MaterialBanner(
         content: Text(message),
@@ -22,7 +24,10 @@ class HelpingHand {
               color: Colors.white,
               fontWeight: FontWeight.bold,
             ),
-        actions: [],
+        actions: [
+          onCancel,
+          onConfirm,
+        ],
       ),
     );
   }

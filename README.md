@@ -4,10 +4,13 @@ process. Every project contains these basic code snippets and I was tired of wri
 again so I made a repo for everyone to take advantage of it and boost their production.
 
 ## Features
--> Event Dialogs: Error, Warning, Success & Info
--> Timestamp formation extension showing from seconds to years: i.e 1m ago | 1day ago
--> Spacing extensions: To add desire spacing both horizontally and vertically
+<ul>
+<li>Customisable Event Dialogs: Error, Warning, Success & Info</li>
+<li>Timestamp formation extension showing from seconds to years: i.e 1m ago | 1day agoo</li>
+<li>Spacing extensions: To add desire spacing both horizontally and vertically</li>
+<li>Action customisable confirmation dialog</li>
 
+</ul>
 
 ## Getting started
 

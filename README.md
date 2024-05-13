@@ -15,7 +15,9 @@ again so I made a repo for everyone to take advantage of it and boost their prod
 ## Getting started
 
 Add this plugin with this command 
-'''bash flutter pub add helping_hand'''
+```bash 
+flutter pub add helping_hand
+```
 
 ## Usage
 

@@ -48,6 +48,26 @@ You can show error, warning, info and success dialog. Here context is your build
 ```dart
 HelpingHand.showError(message:"This is an error",context:Get.context!);
 ```
+To show confirmation dialog:
+```dart
+ HelpingHand.instance.showConfirmationDialog(
+                    message: "Want to exist the app?",
+                    context: context,
+                    onConfirm: TextButton(
+                      onPressed: () async {
+                        Navigator.pop(context);
+                        exit(0);
+                      },
+                      child: const Text("Exit"),
+                    ),
+                    onCancel: IconButton(
+                      onPressed: () async {
+                        Navigator.pop(context);
+                      },
+                      icon: const Icon(Icons.close),
+                    ),
+                  );
+```
 ## Additional information
 
 Everyone is welcome to include useful code snippets so that we can increase our speed during development. Accepting pull requests on the repo.

@@ -15,7 +15,7 @@ class HelpingHand {
       required BuildContext context,
       TextStyle? style,
       required Widget onConfirm,
-      onCancel}) async {
+      required Widget onCancel}) async {
     ScaffoldMessenger.of(context).showMaterialBanner(
       MaterialBanner(
         content: Text(message),

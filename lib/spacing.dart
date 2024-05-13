@@ -11,3 +11,15 @@ extension SpaceWidgetsForDouble on double {
         width: this,
       );
 }
+
+extension SpaceWidgetsForNum on num {
+  ///To add space vertically
+  Widget get height => SizedBox(
+        height: toDouble(),
+      );
+
+  ///To add space horizontally
+  Widget get width => SizedBox(
+        width: toDouble(),
+      );
+}
